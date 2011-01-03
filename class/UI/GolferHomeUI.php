@@ -19,6 +19,7 @@ class GolferHomeUI {
         $pager->setModule('golfer');
         $pager->setTemplate('Golfer_Home.tpl');
         $pager->allowPartialReport(false);
+        $pager->setOrder('name','asc');
         $pager->addToggle('');
         $pager->addToggle(' style="background-color: white;"');
         $pager->addRowTags('get_row_tags');
